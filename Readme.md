@@ -3,6 +3,7 @@
  - font awesome for icons
  - "Montserrat" font. It can be found here [https://fonts.google.com/specimen/Montserrat](https://fonts.google.com/specimen/Montserrat)
  - CSS Grid for layout
+ - https://unsplash.com/ used for images
 
 ### Helpful Links / Videos
 - [https://www.youtube.com/watch?v=6ophW7Ask_0&t=725s](https://www.youtube.com/watch?v=6ophW7Ask_0&t=725s) Brad Traversy tutorial on how to create a modal from scratch ( with HTML, CSS, Javascript) I used it to help me with the animation portion.
