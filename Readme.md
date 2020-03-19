@@ -1,5 +1,5 @@
 ## Modal with Javascript
-### Design decisions:
+### Tools & Design:
  - font awesome for icons
  - "Montserrat" font. It can be found here [https://fonts.google.com/specimen/Montserrat](https://fonts.google.com/specimen/Montserrat)
 
