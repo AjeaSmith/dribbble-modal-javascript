@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    height: 100vh;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.container button.toggle{
+    position: absolute;
+    top: 4em;
+    left: 40em;
+    font-size: 0.9em;
+    cursor: pointer;
+    background:#123B37;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    height: auto;
+    padding: 1em 0;
+    border: 0 none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.194);
+}
+.container .modal{
+    background: white;
+    row-gap: 0.5em;
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 13em;
+    left: 25em;
+    height: 220px;
+    width: 540px;
+    border-bottom: 0 none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+    display: grid;
+    grid-template-areas: "closebtn closebtn"
+                         "icon text"
+                         "reply PreNxt";
+    grid-template-columns: 100px auto;
+    grid-template-rows: 16px auto auto;
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+.show_modal{
+    display: none;
+}
+.container .modal .close_btn{
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+    color: red;
+    grid-area: closebtn;
+}
+.container .modal .close_btn button{
+    border: 0;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.46);
+    cursor: pointer;
+}
+.container .modal .img_icon {
+    grid-area: icon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .modal .img_icon img{
+    width: 70%;
+    border-radius: 50%;
+}
+.container .modal .notify_content{
+    grid-area: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .modal .notify_content p{
+    font-size: 1.2em;
+}
+.container .modal .reply_btn{
+    grid-area: reply;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+.container .modal .reply_btn p{
+    color: rgba(0, 0, 0, 0.46);
+    margin-right: 0.5em;
+}
+.container .modal .preNxt{
+    grid-area: PreNxt;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+}
+.container .modal .preNxt p{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.46);
+}
+.container .modal .preNxt p:nth-last-child(1){
+    margin-left: 1em;
+    color: #2897E2;
+}
+@keyframes modalopen{
+    from{
+        opacity: 0;
+        top: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
